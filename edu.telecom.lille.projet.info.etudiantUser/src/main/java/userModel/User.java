@@ -56,8 +56,7 @@ public class User {
 	 * @param userLogin 
 	 */
 	public void getUserName(String userLogin) {
-		// Start of user code for method getUserName
-		// End of user code
+		
 	}
 
 	/**

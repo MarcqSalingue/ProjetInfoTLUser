@@ -42,6 +42,7 @@ public class UserController implements IUserController {
 	@Override
 	public String getUserClass(String userLogin, String userPwd) {
 		// TODO Auto-generated method stub
+		
 		return null;
 	}
 

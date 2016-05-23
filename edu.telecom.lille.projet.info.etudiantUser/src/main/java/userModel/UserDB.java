@@ -1,7 +1,15 @@
 /*******************************************************************************
  * 2016, All rights reserved.
  *******************************************************************************/
-package userModel;
+package main.java.userModel;
+import java.io.File;
+import java.nio.file.DirectoryStream.Filter;
+import java.util.HashSet;
+import org.jdom2.*;
+import org.jdom2.input.SAXBuilder;
+
+import java.util.List;
+import java.util.Iterator;
 
 // Start of user code (user defined imports)
 
@@ -35,10 +43,9 @@ public class UserDB {
 	/**
 	 * The constructor.
 	 */
-	public UserDB() {
-		// Start of user code constructor for UserDB)
+	public UserDB(String file)  {
 		super();
-		// End of user code
+		this.file = file;
 	}
 
 	/**
@@ -70,6 +77,8 @@ public class UserDB {
 	 */
 	public void usersLoginToString() {
 		// Start of user code for method usersLoginToString
+		//SAXBuilder builder = new SAXBuilder();
+		//File xmlFile = new File(this.file);
 		// End of user code
 	}
 
