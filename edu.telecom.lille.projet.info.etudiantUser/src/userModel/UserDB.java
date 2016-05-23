@@ -37,6 +37,22 @@ public class UserDB {
 		this.setFile(file);
 	}
 
+	public boolean loadDB() {
+		// Start of user code for method loadDB
+		// End of user code
+		return true;
+	}
+
+	/**
+	 * Description of the method saveDB.
+	 */
+	
+	public void saveDB() {
+		// Start of user code for method saveDB
+		// End of user code
+	}
+	
+	
 	/**
 	 * Getter de file
 	 * 

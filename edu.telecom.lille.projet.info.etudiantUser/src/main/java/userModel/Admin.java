@@ -1,12 +1,9 @@
 /*******************************************************************************
  * 2016, All rights reserved.
  *******************************************************************************/
-package userModel;
-
-import userModel.User;
-// Start of user code  (user defined imports)
-
-// End of user code
+package main.java.userModel;
+import main.java.userModel.User;
+import main.java.userModel.UserDB;
 
 /**
  * Description of Admin.
@@ -14,14 +11,13 @@ import userModel.User;
  * @author humar
  */
 public class Admin extends User {
+
+	static final int MAX_STUDENTS = 500;
 	/**
 	 * Description of the property adminID.
 	 */
-	protected Integer adminID = Integer.valueOf(0);
-
-	// Start of user code (user defined attributes for Admin)
-
-	// End of user code
+	
+	protected int adminID;
 
 	/**
 	 * The constructor.
@@ -72,8 +68,18 @@ public class Admin extends User {
 	 */
 	public void addStudent(String adminLogin, String newStudentLogin, Integer studentID, String firstname,
 			String surname, String pwd) {
-		// Start of user code for method addStudent
-		// End of user code
+
+		int i;
+		for (i=0;i<=MAX_STUDENTS;i++) {
+			if(newStudentLogin == UserDB.studentsLoginToString() )
+		}
+		
+		Student newStudent = new Student();
+		newStudent.login = newStudentLogin;
+		newStudent.pwd = pwd;
+		newStudent.studentID = studentID;
+		newStudent.firstname = firstname;
+		newStudent.surname = surname;
 	}
 
 	/**

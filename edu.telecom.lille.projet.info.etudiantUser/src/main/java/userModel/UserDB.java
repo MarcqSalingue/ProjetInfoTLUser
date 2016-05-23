@@ -2,9 +2,11 @@
  * 2016, All rights reserved.
  *******************************************************************************/
 package main.java.userModel;
-import java.io.File;
+
 import java.nio.file.DirectoryStream.Filter;
 import java.util.HashSet;
+import java.util.Hashtable;
+
 import org.jdom2.*;
 import org.jdom2.input.SAXBuilder;
 
@@ -25,19 +27,16 @@ public class UserDB {
 	 * Description of the property groups.
 	 */
 	public HashSet<Group> groups = new HashSet<Group>();
-
 	/**
 	 * Description of the property file.
 	 */
 	private String file = "";
-
 	/**
 	 * Description of the property users.
 	 */
-	public HashSet<User> users = new HashSet<User>();
+	private Hashtable tabUsers = new Hashtable();
 
 	// Start of user code (user defined attributes for UserDB)
-
 	// End of user code
 
 	/**
@@ -51,9 +50,10 @@ public class UserDB {
 	/**
 	 * Description of the method loadDB.
 	 */
-	public void loadDB() {
+	public boolean loadDB() {
 		// Start of user code for method loadDB
 		// End of user code
+		return true;
 	}
 
 	/**
@@ -85,11 +85,34 @@ public class UserDB {
 	/**
 	 * Description of the method studentsLoginToString.
 	 */
-	public void studentsLoginToString() {
-		// Start of user code for method studentsLoginToString
-		// End of user code
+	public java.lang.String[] studentsLoginToString() {
+	
+		java.lang.String[] tabStudentsLogin = null;
+		
+		return tabStudentsLogin;
+		
 	}
 
+	/**
+	 * Description of the method getUserClass.
+	 * @param userLogin 
+	 * @param userPwd 
+	 */
+	public void getUserClass(String userLogin, String userPwd) {
+		String userClass = "";
+		boolean userIsFound;
+		// Start of user code for method getUserClass
+		if (userIsFound) {
+		
+			if (userLogin instanceof Student) {
+			
+			}
+			
+		}
+		
+		// End of user code
+	}
+	
 	/**
 	 * Description of the method usersToString.
 	 */

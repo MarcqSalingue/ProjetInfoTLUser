@@ -1,6 +1,6 @@
 package userController;
 
-import userModel.UserDB;
+import main.java.userModel.UserDB;
 
 /**
  * Cette classe est le contrôleur d'utilisateurs que vous devez implémenter. 
@@ -42,7 +42,6 @@ public class UserController implements IUserController {
 	@Override
 	public String getUserClass(String userLogin, String userPwd) {
 		// TODO Auto-generated method stub
-		
 		return null;
 	}
 
@@ -130,7 +129,7 @@ public class UserController implements IUserController {
 	@Override
 	public boolean loadDB() {
 		// TODO Auto-generated method stub
-		return false;
+		return userDB.loadDB();
 	}
 
 	@Override
