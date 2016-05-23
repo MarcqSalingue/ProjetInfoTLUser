@@ -4,7 +4,7 @@
 package userModel;
 
 import userModel.User;
-// Start of user code (user defined imports)
+// Start of user code  (user defined imports)
 
 // End of user code
 
